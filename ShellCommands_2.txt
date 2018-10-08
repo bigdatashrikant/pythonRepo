@@ -1,0 +1,215 @@
+[Zensar@TRNGW46L0135 sd51612]$ cat /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+bin:x:1:1:bin:/bin:/sbin/nologin
+daemon:x:2:2:daemon:/sbin:/sbin/nologin
+adm:x:3:4:adm:/var/adm:/sbin/nologin
+lp:x:4:7:lp:/var/spool/lpd:/sbin/nologin
+sync:x:5:0:sync:/sbin:/bin/sync
+shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown
+halt:x:7:0:halt:/sbin:/sbin/halt
+mail:x:8:12:mail:/var/spool/mail:/sbin/nologin
+uucp:x:10:14:uucp:/var/spool/uucp:/sbin/nologin
+operator:x:11:0:operator:/root:/sbin/nologin
+games:x:12:100:games:/usr/games:/sbin/nologin
+gopher:x:13:30:gopher:/var/gopher:/sbin/nologin
+ftp:x:14:50:FTP User:/var/ftp:/sbin/nologin
+nobody:x:99:99:Nobody:/:/sbin/nologin
+dbus:x:81:81:System message bus:/:/sbin/nologin
+usbmuxd:x:113:113:usbmuxd user:/:/sbin/nologin
+vcsa:x:69:69:virtual console memory owner:/dev:/sbin/nologin
+rpc:x:32:32:Rpcbind Daemon:/var/cache/rpcbind:/sbin/nologin
+rtkit:x:499:497:RealtimeKit:/proc:/sbin/nologin
+avahi-autoipd:x:170:170:Avahi IPv4LL Stack:/var/lib/avahi-autoipd:/sbin/nologin
+abrt:x:173:173::/etc/abrt:/sbin/nologin
+rpcuser:x:29:29:RPC Service User:/var/lib/nfs:/sbin/nologin
+nfsnobody:x:65534:65534:Anonymous NFS User:/var/lib/nfs:/sbin/nologin
+haldaemon:x:68:68:HAL daemon:/:/sbin/nologin
+gdm:x:42:42::/var/lib/gdm:/sbin/nologin
+ntp:x:38:38::/etc/ntp:/sbin/nologin
+apache:x:48:48:Apache:/var/www:/sbin/nologin
+saslauth:x:498:76:Saslauthd user:/var/empty/saslauth:/sbin/nologin
+postfix:x:89:89::/var/spool/postfix:/sbin/nologin
+pulse:x:497:496:PulseAudio System Daemon:/var/run/pulse:/sbin/nologin
+sshd:x:74:74:Privilege-separated SSH:/var/empty/sshd:/sbin/nologin
+tcpdump:x:72:72::/:/sbin/nologin
+Zensar:x:500:500:Zensar:/home/Zensar:/bin/bash
+[Zensar@TRNGW46L0135 sd51612]$ cat /etc/group
+root:x:0:
+bin:x:1:bin,daemon
+daemon:x:2:bin,daemon
+sys:x:3:bin,adm
+adm:x:4:adm,daemon
+tty:x:5:
+disk:x:6:
+lp:x:7:daemon
+mem:x:8:
+kmem:x:9:
+wheel:x:10:
+mail:x:12:mail,postfix
+uucp:x:14:
+man:x:15:
+games:x:20:
+gopher:x:30:
+video:x:39:
+dip:x:40:
+ftp:x:50:
+lock:x:54:
+audio:x:63:
+nobody:x:99:
+users:x:100:
+dbus:x:81:
+usbmuxd:x:113:
+utmp:x:22:
+utempter:x:35:
+desktop_admin_r:x:499:
+desktop_user_r:x:498:
+floppy:x:19:
+vcsa:x:69:
+rpc:x:32:
+rtkit:x:497:
+avahi-autoipd:x:170:
+abrt:x:173:
+cdrom:x:11:
+tape:x:33:
+dialout:x:18:
+wbpriv:x:88:
+rpcuser:x:29:
+nfsnobody:x:65534:
+haldaemon:x:68:haldaemon
+gdm:x:42:
+ntp:x:38:
+apache:x:48:
+saslauth:x:76:
+postdrop:x:90:
+postfix:x:89:
+pulse:x:496:
+pulse-access:x:495:
+fuse:x:494:
+sshd:x:74:
+stapusr:x:156:
+stapsys:x:157:
+stapdev:x:158:
+tcpdump:x:72:
+slocate:x:21:
+Zensar:x:500:
+[Zensar@TRNGW46L0135 sd51612]$ clear
+[Zensar@TRNGW46L0135 sd51612]$ cat /etc/group | grep *ensar
+[Zensar@TRNGW46L0135 sd51612]$ cat /etc/group | grep *Zensar
+[Zensar@TRNGW46L0135 sd51612]$ cd ..
+[Zensar@TRNGW46L0135 ~]$ cat /etc/group | grep *Zensar
+[Zensar@TRNGW46L0135 ~]$ pwd
+/home/Zensar
+[Zensar@TRNGW46L0135 ~]$ cat /etc/group | grep Zensar
+Zensar:x:500:
+[Zensar@TRNGW46L0135 ~]$ cat /etc/group | grep *ensar
+[Zensar@TRNGW46L0135 ~]$ cat /etc/group | grep -i *ensar
+[Zensar@TRNGW46L0135 ~]$ cat /etc/group | grep -i "*ensar"
+[Zensar@TRNGW46L0135 ~]$ cat /etc/group | grep -i "Zensar"
+Zensar:x:500:
+[Zensar@TRNGW46L0135 ~]$ pwd
+/home/Zensar
+[Zensar@TRNGW46L0135 ~]$ cd sd51612
+[Zensar@TRNGW46L0135 sd51612]$ mkdir my-data
+[Zensar@TRNGW46L0135 sd51612]$ cd my-data/
+[Zensar@TRNGW46L0135 my-data]$ mkdir accounts
+[Zensar@TRNGW46L0135 my-data]$ cd accounts/
+[Zensar@TRNGW46L0135 accounts]$ pwd
+/home/Zensar/sd51612/my-data/accounts
+[Zensar@TRNGW46L0135 accounts]$ cd /home/sd51612
+bash: cd: /home/sd51612: No such file or directory
+[Zensar@TRNGW46L0135 accounts]$ pwd
+/home/Zensar/sd51612/my-data/accounts
+[Zensar@TRNGW46L0135 accounts]$ cd $/home/sd51612
+bash: cd: $/home/sd51612: No such file or directory
+[Zensar@TRNGW46L0135 accounts]$ cd.. /home/sd51612
+bash: cd..: command not found
+[Zensar@TRNGW46L0135 accounts]$ pwd
+/home/Zensar/sd51612/my-data/accounts
+[Zensar@TRNGW46L0135 accounts]$ cd ../..
+[Zensar@TRNGW46L0135 sd51612]$ pwd
+/home/Zensar/sd51612
+[Zensar@TRNGW46L0135 sd51612]$ cd my-data/accounts/
+[Zensar@TRNGW46L0135 accounts]$ pwd
+/home/Zensar/sd51612/my-data/accounts
+[Zensar@TRNGW46L0135 accounts]$ cd  /home/Zensar/sd51612
+[Zensar@TRNGW46L0135 sd51612]$ pwd
+/home/Zensar/sd51612
+[Zensar@TRNGW46L0135 sd51612]$ echo "my file">my_file1
+[Zensar@TRNGW46L0135 sd51612]$ ls
+hello_file.txt  my-data  my_file1
+[Zensar@TRNGW46L0135 sd51612]$ cat ./my_file1
+my file
+[Zensar@TRNGW46L0135 sd51612]$ cat my_file1
+my file
+[Zensar@TRNGW46L0135 sd51612]$ cat .my_file1
+cat: .my_file1: No such file or directory
+[Zensar@TRNGW46L0135 sd51612]$ ./my_file1
+bash: ./my_file1: Permission denied
+[Zensar@TRNGW46L0135 sd51612]$ clear
+[Zensar@TRNGW46L0135 sd51612]$ ls -l
+total 8
+-rw-rw-r--. 1 Zensar Zensar    0 Oct  9 03:33 hello_file.txt
+drwxrwxr-x. 3 Zensar Zensar 4096 Oct  9 04:17 my-data
+-rw-rw-r--. 1 Zensar Zensar    8 Oct  9 04:21 my_file1
+[Zensar@TRNGW46L0135 sd51612]$ chmod 777 my_file1
+[Zensar@TRNGW46L0135 sd51612]$ ls
+hello_file.txt  my-data  my_file1
+[Zensar@TRNGW46L0135 sd51612]$ ls -l
+total 8
+-rw-rw-r--. 1 Zensar Zensar    0 Oct  9 03:33 hello_file.txt
+drwxrwxr-x. 3 Zensar Zensar 4096 Oct  9 04:17 my-data
+-rwxrwxrwx. 1 Zensar Zensar    8 Oct  9 04:21 my_file1
+[Zensar@TRNGW46L0135 sd51612]$ ./my_file1
+./my_file1: line 1: my: command not found
+[Zensar@TRNGW46L0135 sd51612]$ cat my_file1
+my file
+[Zensar@TRNGW46L0135 sd51612]$ cat . my_file1
+cat: .: Is a directory
+my file
+[Zensar@TRNGW46L0135 sd51612]$ cat ./my_file1
+my file
+[Zensar@TRNGW46L0135 sd51612]$ chmod 664 my_file1
+[Zensar@TRNGW46L0135 sd51612]$ ls -l
+total 8
+-rw-rw-r--. 1 Zensar Zensar    0 Oct  9 03:33 hello_file.txt
+drwxrwxr-x. 3 Zensar Zensar 4096 Oct  9 04:17 my-data
+-rw-rw-r--. 1 Zensar Zensar    8 Oct  9 04:21 my_file1
+[Zensar@TRNGW46L0135 sd51612]$ cat ./my_file1
+my file
+[Zensar@TRNGW46L0135 sd51612]$ cat . my_file1
+cat: .: Is a directory
+my file
+[Zensar@TRNGW46L0135 sd51612]$ clear
+[Zensar@TRNGW46L0135 sd51612]$ ll
+total 8
+-rw-rw-r--. 1 Zensar Zensar    0 Oct  9 03:33 hello_file.txt
+drwxrwxr-x. 3 Zensar Zensar 4096 Oct  9 04:17 my-data
+-rw-rw-r--. 1 Zensar Zensar    8 Oct  9 04:21 my_file1
+[Zensar@TRNGW46L0135 sd51612]$ vi hello_file.txt
+[Zensar@TRNGW46L0135 sd51612]$ cat hello_file.txt
+this is file
+dfahkfasd
+[Zensar@TRNGW46L0135 sd51612]$ vi hello_file.txt
+[Zensar@TRNGW46L0135 sd51612]$ vi hello_file.txt
+[Zensar@TRNGW46L0135 sd51612]$ vi hello_file.txt
+[Zensar@TRNGW46L0135 sd51612]$ cat hello_file.txt
+2yythis is file
+
+hsdfhklhkldfas
+dfahkfasd
+[Zensar@TRNGW46L0135 sd51612]$ cat hello_file.txt | grep hk
+hsdfhklhkldfas
+dfahkfasd
+[Zensar@TRNGW46L0135 sd51612]$ wc -l hello_file.txt
+4 hello_file.txt
+[Zensar@TRNGW46L0135 sd51612]$
+
+
+
+
+
+
+
+
+
+
