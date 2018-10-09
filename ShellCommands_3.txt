@@ -1,0 +1,1124 @@
+login as: Zensar
+Zensar@10.80.12.40's password:
+Access denied
+Zensar@10.80.12.40's password:
+Last login: Tue Oct  9 04:22:42 2018 from 10.80.12.85
+[Zensar@TRNGW46L0135 ~]$ pwd
+/home/Zensar
+[Zensar@TRNGW46L0135 ~]$ whoami
+Zensar
+[Zensar@TRNGW46L0135 ~]$ cd sd51612
+[Zensar@TRNGW46L0135 sd51612]$ pwd
+/home/Zensar/sd51612
+[Zensar@TRNGW46L0135 sd51612]$ vi testfile
+[Zensar@TRNGW46L0135 sd51612]$ ls
+hello_file.txt  my-data  my_file1  testfile
+[Zensar@TRNGW46L0135 sd51612]$ cp testfile /my-data
+cp: cannot create regular file `/my-data': Permission denied
+[Zensar@TRNGW46L0135 sd51612]$ ls -l
+total 16
+-rw-rw-r--. 1 Zensar Zensar   97 Oct  9 04:59 hello_file.txt
+drwxrwxr-x. 3 Zensar Zensar 4096 Oct  9 04:17 my-data
+-rw-rw-r--. 1 Zensar Zensar    8 Oct  9 04:21 my_file1
+-rw-rw-r--. 1 Zensar Zensar  213 Oct 10 02:14 testfile
+[Zensar@TRNGW46L0135 sd51612]$ chmod 777 my-data
+[Zensar@TRNGW46L0135 sd51612]$ cp testfile /my-data
+cp: cannot create regular file `/my-data': Permission denied
+[Zensar@TRNGW46L0135 sd51612]$ cd testfile /tmp
+-bash: cd: testfile: Not a directory
+[Zensar@TRNGW46L0135 sd51612]$ cd ..
+[Zensar@TRNGW46L0135 ~]$ ls -lrt
+total 300
+drwxr-xr-x. 2 Zensar Zensar 4096 Oct  4 06:42 Templates
+drwxr-xr-x. 2 Zensar Zensar 4096 Oct  4 06:42 Public
+drwxr-xr-x. 2 Zensar Zensar 4096 Oct  4 06:42 Downloads
+drwxr-xr-x. 2 Zensar Zensar 4096 Oct  4 06:42 Documents
+drwxr-xr-x. 2 Zensar Zensar 4096 Oct  4 06:42 Desktop
+drwxr-xr-x. 2 Zensar Zensar 4096 Oct  4 06:42 Videos
+drwxr-xr-x. 2 Zensar Zensar 4096 Oct  4 06:42 Pictures
+drwxr-xr-x. 2 Zensar Zensar 4096 Oct  4 06:42 Music
+drwxrwxr-x. 2 Zensar Zensar 4096 Oct  9 03:19 RY49357
+drwxrwxr-x. 2 Zensar Zensar 4096 Oct  9 03:21 29932
+drwxrwxr-x. 2 Zensar Zensar 4096 Oct  9 03:21 gl42162
+drwxrwxr-x. 2 Zensar Zensar 4096 Oct  9 03:21 SP50818
+drwxrwxr-x. 3 Zensar Zensar 4096 Oct  9 03:21 51522
+drwxrwxr-x. 2 Zensar Zensar 4096 Oct  9 03:27 42163
+drwxrwxr-x. 2 Zensar Zensar 4096 Oct  9 03:27 mp51524
+drwxrwxr-x. 2 Zensar Zensar 4096 Oct  9 03:27 mp51523
+drwxrwxr-x. 2 Zensar Zensar 4096 Oct  9 03:27 RY39458
+drwxrwxr-x. 2 Zensar Zensar 4096 Oct  9 03:27 51079
+drwxrwxr-x. 2 Zensar Zensar 4096 Oct  9 03:27 51077
+drwxrwxr-x. 2 Zensar Zensar 4096 Oct  9 03:27 51581
+drwxrwxr-x. 2 Zensar Zensar 4096 Oct  9 03:27 51579
+drwxrwxr-x. 2 Zensar Zensar 4096 Oct  9 03:27 rc49821
+drwxrwxr-x. 2 Zensar Zensar 4096 Oct  9 03:27 rc49822
+drwxrwxr-x. 2 Zensar Zensar 4096 Oct  9 03:27 51510
+drwxrwxr-x. 2 Zensar Zensar 4096 Oct  9 03:27 51508
+drwxrwxr-x. 2 Zensar Zensar 4096 Oct  9 03:27 27199
+drwxrwxr-x. 2 Zensar Zensar 4096 Oct  9 03:27 27198
+drwxrwxr-x. 2 Zensar Zensar 4096 Oct  9 03:27 492963
+drwxrwxr-x. 2 Zensar Zensar 4096 Oct  9 03:27 492962
+drwxrwxr-x. 2 Zensar Zensar 4096 Oct  9 03:27 492961
+drwxrwxr-x. 2 Zensar Zensar 4096 Oct  9 03:27 vm29934
+drwxrwxr-x. 2 Zensar Zensar 4096 Oct  9 03:27 vm29933
+drwxrwxr-x. 2 Zensar Zensar 4096 Oct  9 03:27 CK50970
+drwxrwxr-x. 2 Zensar Zensar 4096 Oct  9 03:27 CK50969
+drwxrwxr-x. 2 Zensar Zensar 4096 Oct  9 03:27 RY39459
+drwxrwxr-x. 2 Zensar Zensar 4096 Oct  9 03:27 51078
+drwxrwxr-x. 2 Zensar Zensar 4096 Oct  9 03:27 3
+drwxrwxr-x. 2 Zensar Zensar 4096 Oct  9 03:27 2
+drwxrwxr-x. 2 Zensar Zensar 4096 Oct  9 03:27 1
+drwxrwxr-x. 2 Zensar Zensar 4096 Oct  9 03:27 27196
+drwxrwxr-x. 2 Zensar Zensar 4096 Oct  9 03:28 51511
+drwxrwxr-x. 2 Zensar Zensar 4096 Oct  9 03:28 51509
+drwxrwxr-x. 2 Zensar Zensar 4096 Oct  9 03:28 sd51615
+drwxrwxr-x. 2 Zensar Zensar 4096 Oct  9 03:28 sd51614
+drwxrwxr-x. 2 Zensar Zensar 4096 Oct  9 03:28 sd51613
+drwxrwxr-x. 2 Zensar Zensar 4096 Oct  9 03:28 42251
+drwxrwxr-x. 2 Zensar Zensar 4096 Oct  9 03:28 42250
+drwxrwxr-x. 2 Zensar Zensar 4096 Oct  9 03:28 51519
+drwxrwxr-x. 2 Zensar Zensar 4096 Oct  9 03:28 51518
+drwxrwxr-x. 2 Zensar Zensar 4096 Oct  9 03:28 51513
+drwxrwxr-x. 2 Zensar Zensar 4096 Oct  9 03:28 27167
+drwxrwxr-x. 2 Zensar Zensar 4096 Oct  9 03:28 27166
+drwxrwxr-x. 3 Zensar Zensar 4096 Oct  9 03:31 51507
+drwxrwxr-x. 2 Zensar Zensar 4096 Oct  9 03:31 RY39457
+drwxrwxr-x. 2 Zensar Zensar 4096 Oct  9 03:31 49296
+drwxrwxr-x. 2 Zensar Zensar 4096 Oct  9 03:33 AS47608
+drwxrwxr-x. 2 Zensar Zensar 4096 Oct  9 04:22 AS39192
+drwxrwxr-x. 2 Zensar Zensar 4096 Oct  9 04:23 sr07
+drwxrwxr-x. 3 Zensar Zensar 4096 Oct  9 04:23 123
+drwxrwxr-x. 2 Zensar Zensar 4096 Oct  9 04:25 vm29932
+drwxrwxr-x. 3 Zensar Zensar 4096 Oct  9 04:28 inst
+drwxrwxr-x. 3 Zensar Zensar 4096 Oct  9 04:42 rc49820
+drwxrwxr-x. 2 Zensar Zensar 4096 Oct  9 04:44 42162
+drwxrwxrwx. 2 Zensar Zensar 4096 Oct  9 04:44 51076
+drwxrwxr-x. 2 Zensar Zensar 4096 Oct  9 04:45 sm49296
+drwxrwxr-x. 2 Zensar Zensar 4096 Oct  9 04:59 CK50968
+drwxrwxr-x. 4 Zensar Zensar 4096 Oct 10 02:05 42249
+drwxrwxrwx. 3 Zensar Zensar 4096 Oct 10 02:13 50077
+drwxrwxr-x. 2 Zensar Zensar 4096 Oct 10 02:14 51578
+drwxrwxr-x. 3 Zensar Zensar 4096 Oct 10 02:14 mp51522
+drwxrwxr-x. 3 Zensar Zensar 4096 Oct 10 02:14 sd51612
+-rw-rw-r--. 1 Zensar Zensar    0 Oct 10 02:14 test
+drwxrwxr-x. 6 Zensar Zensar 4096 Oct 10 02:15 27197
+drwxrwxr-x. 2 Zensar Zensar 4096 Oct 10 02:15 kg25797
+drwxrwxr-x. 2 Zensar Zensar 4096 Oct 10 02:15 sk47949
+drwxrwxr-x. 2 Zensar Zensar 4096 Oct 10 02:16 44838
+[Zensar@TRNGW46L0135 ~]$ cd sd51612
+[Zensar@TRNGW46L0135 sd51612]$ clear
+[Zensar@TRNGW46L0135 sd51612]$ cd ..
+[Zensar@TRNGW46L0135 ~]$ touch testfile11
+[Zensar@TRNGW46L0135 ~]$ cp testfile11 /tmp
+[Zensar@TRNGW46L0135 ~]$ ls /tmp/testfile11
+/tmp/testfile11
+[Zensar@TRNGW46L0135 ~]$ ls -lrt /tmp/testfile11
+-rw-rw-r--. 1 Zensar Zensar 0 Oct 10 02:17 /tmp/testfile11
+[Zensar@TRNGW46L0135 ~]$ mv testfile11 mv_test
+[Zensar@TRNGW46L0135 ~]$ ls testfile11
+ls: cannot access testfile11: No such file or directory
+[Zensar@TRNGW46L0135 ~]$ ls mv_test
+mv_test
+[Zensar@TRNGW46L0135 ~]$ clear
+[Zensar@TRNGW46L0135 ~]$ history
+   21  pwd
+   22  mkdir 51076 51077 51079
+   23  mkdir 51077 51078 51079
+   24  cd $HOME
+   25  ls -d
+   26  pwd
+   27  ll
+   28  ls
+   29  ls -d
+   30  ls -ld
+   31  chmod 0777 51076
+   32  ls
+   33  ls -ld
+   34  cd 51076
+   35  ll
+   36  pwd
+   37  echo hello linux > hello_file.txt
+   38  ll
+   39  cat hello_file.txt
+   40  echo hello >> hello_file.txt
+   41  cat hello_file.txt
+   42  > hello_file.txt
+   43  cat hello_file.txt
+   44  30
+   45  cat /etc/passwd
+   46  cat /etc/group
+   47  cat /etc/group | grep *ensar*
+   48  cat /etc/group | grep ZE*
+   49  cat /etc/group | grep Ze*
+   50  cat /etc/group | grep Zensar
+   51  echo $PATH
+   52  touch my-file_76
+   53  ll
+   54  vi my-file_76
+   55  cat .my-file_76
+   56  cat ./my-file_76
+   57  cat my-file_76
+   58  cat `.my-file_76`
+   59  vi my-file_76
+   60  sudo su -
+   61  history
+   62  clear
+   63  su
+   64  su - root
+   65  pwd
+   66  ifconfig
+   67  cls
+   68  clear
+   69  ifconfig
+   70  su -root
+   71  su - root
+   72  history
+   73  echo $SHELL
+   74  echo 'My'
+   75  echo "My First commmand"
+   76  echo 12345
+   77  date
+   78  date -mm
+   79  date -- help
+   80  date --help
+   81  uname -a
+   82  clear
+   83  uname -a
+   84  uptime
+   85  who am i
+   86  who
+   87  id
+   88  last
+   89  id
+   90  last
+   91  w
+   92  ksh
+   93  echo shell
+   94  ksh
+   95  echo $SHELL
+   96  ksh
+   97  man
+   98  man ls
+   99  wall --help
+  100  wall 123
+  101  :q
+  102  man ls
+  103  man who
+  104  clear
+  105  cal 2010
+  106  cal 9 1752
+  107  time sleep 5
+  108  history
+  109  clear
+  110  history
+  111  clear
+  112  logoff
+  113  history
+  114  history 51
+  115  history 44
+  116  clear
+  117  history 234
+  118  history 23
+  119  clear
+  120  yes please
+  121  history
+  122  clear
+  123  bc - l
+  124  bc -l
+  125  echo 5+4 | bc -L
+  126  echo 5+4 | bc -l
+  127  echo 5+4 |
+  128  top
+  129  cd 0
+  130  pwd
+  131  ls -al
+  132  mkdir AS39192
+  133  cd AS39192
+  134  PWD
+  135  pwd
+  136  cd -
+  137  cd :q
+  138  ls
+  139  ls -l
+  140  ls -a
+  141  ls
+  142  ls -l
+  143  ls -al
+  144  ls - d
+  145  ld -d
+  146  ls -d
+  147  ]cd $HOME
+  148  pwd
+  149  ls -d
+  150  mkdir 1  2  3
+  151  ls - d
+  152  ls -d
+  153  cd $HOME
+  154  echo
+  155  echo $HOME
+  156  ls -d
+  157  ls -al
+  158  cd $HOME
+  159  pwd
+  160  cd AS*
+  161  pwd
+  162  echo hello linux
+  163  cat hello_file.txt
+  164  echo hello linux >> hello_file.txt
+  165  cat hello_file.txt
+  166  echo hello_file.txt > hello_file.txt
+  167  cat hello_file.txt
+  168  echo > hello_file.txt
+  169  cat hello_file.txt
+  170  cat etc\pwd
+  171  cat etc
+  172  cat etc\passwd
+  173  cd $HOME
+  174  pwd
+  175  cat etc\passwd
+  176  cd etc\passwd
+  177  cd etc
+  178  dir
+  179  cat \etc\passwd
+  180  cat /etc/passwd
+  181  cat /etc/group
+  182  cat /etc/group | grep *ensar*
+  183  cat /etc/group | grep*ensar*
+  184  cat /etc/group | grep*Zensar*
+  185  cat /etc/group | grep *Zensar*
+  186  cat /etc/group | grep Zensar
+  187  cat /etc/group | grep Zensar*
+  188  cd /etc/group
+  189  pw
+  190  pwd
+  191  cd $HOME
+  192  cd $HOME/etc/group
+  193  cd ..
+  194  pwd
+  195  cd .
+  196  pwd
+  197  cd /
+  198  pwd
+  199  cd $HOME
+  200  pwd
+  201  cd /etc
+  202  pwd
+  203  cd $HOME
+  204  pwd
+  205  dir
+  206  cd AS*
+  207  cat >> 123.txt
+  208  echo 123.txt
+  209  cat 123.txt
+  210  [Zensar@TRNGW46L0135 AS39192]$ echo hello linux >> hello_file.txt
+  211  [Zensar@TRNGW46L0135 AS39192]$ cat hello_file.txt
+  212  hello linux
+  213  [Zensar@TRNGW46L0135 AS39192]$ echo hello_file.txt > hello_file.txt
+  214  [Zensar@TRNGW46L0135 AS39192]$ cat hello_file.txt
+  215  hello_file.txt
+  216  [Zensar@TRNGW46L0135 AS39192]$ echo > hello_file.txt
+  217  [Zensar@TRNGW46L0135 AS39192]$ cat hello_file.txt
+  218  [Zensar@TRNGW46L0135 AS39192]$
+  219  cat ./123
+  220  cat ./123.txt
+  221  cat ./'123.txt'
+  222  cat ./"123.txt"
+  223  clear
+  224  dir
+  225  ls
+  226  ll
+  227  eecho
+  228  yank --hrlp
+  229  vi
+  230  wc -l testfile
+  231  pwd
+  232  cd /home/Zensar/rc49820/
+  233  pwd
+  234  cd -
+  235  pwd
+  236  ls =al
+  237  ls -al
+  238  cd /home/Zensar/rc49820/
+  239  ls -al
+  240  ls -l
+  241  cd .
+  242  pwd
+  243  cd ..
+  244  pwd
+  245  ls -d
+  246  pwd
+  247  cd /home
+  248  ls -l
+  249  cd /home/Zensar/rc49820/
+  250  cd $HOME
+  251  pwd
+  252  mkdir rc49820 rc49821 rc49822
+  253  ls -l
+  254  echo $HOME
+  255  ls -d
+  256  ls -da
+  257  clear
+  258  ls
+  259  ls -ld
+  260  ls
+  261  whoami
+  262  ls
+  263  ls -ld
+  264  ls
+  265  cd /rc49820
+  266  cd rc49820
+  267  pwd
+  268  echo Hello Linux > hello_file.txt
+  269  cat hello_file.txt
+  270  echo hello >> hello_file.txt
+  271  cat hello_file.txt
+  272  echo Hello Linux > hello_file.txt
+  273  cat hello_file.txt
+  274   > hello_file.txt
+  275  cat hello_file.txt
+  276  history
+  277  cat /etc//passwd
+  278  cat /etc/group
+  279  cat /etc/group | grep -i Zensar
+  280  cat /etc/group | grep -i *ensar
+  281  cat /etc/group | grep -i Zensar
+  282  cat /etc/group | grep  *ensar*
+  283  cat /etc/group | grep  Zensar
+  284  cat /etc/group | grep -i *ensar
+  285  cat /etc/group | grep -i ensar
+  286  cat my_20
+  287  touch my_20
+  288  ls
+  289  cat .my_20
+  290  cat my_20
+  291  echo Hello Linux >> .my_20
+  292  cat my_20
+  293  echo Hello Linux >> my_20
+  294  cat my_20
+  295  cat .my_20
+  296  cat /my_20
+  297  cat ./my_20
+  298  cat .my_20.
+  299  cat .my_20
+  300  cd ../..
+  301  cd /home/Zensar/rc4982
+  302  ls
+  303  cd /home/Zensar/rc4980
+  304  cd /home/Zensar/rc49820
+  305  ls
+  306  mkdir test
+  307  chmod 777 test
+  308  ls
+  309  ls -l
+  310  vi test
+  311  vi my_20
+  312  wc -c my_20
+  313  wc -l my_20
+  314  echo $SHELL
+  315  ksh
+  316  echo $SHELL
+  317  man ls
+  318  man who
+  319  clear
+  320  cal 2018
+  321  clear
+  322  cal 2018
+  323  cal 9 2018
+  324  cal 9 1752
+  325  time sleep 5
+  326  clear
+  327  history
+  328  clear
+  329  history 10
+  330  clear
+  331  history 10
+  332  yes please
+  333  bc -l
+  334  echo 5+4 | bc -L
+  335  echo 5+4 | bc -l
+  336  top
+  337  clear
+  338  cd
+  339  pwd
+  340  ls -al
+  341  mkdir rc49820
+  342  ls -l
+  343  pwd
+  344  cd /home/Zensar/rc49820/
+  345  ls
+  346  cd ..
+  347  su - Zensar
+  348  su
+  349  su -
+  350  su - root
+  351  cls
+  352  clear
+  353  su -
+  354  clear
+  355  history
+  356  echo $SHELL
+  357  date
+  358  hostname
+  359  uname -a
+  360  uptime
+  361  echo My First Command
+  362  w
+  363  whoMI
+  364  whoami
+  365  who
+  366  id
+  367  ls
+  368  ls -l
+  369  last
+  370  w
+  371  ksh
+  372  bash
+  373  ls -ltr
+  374  pwd
+  375  mkdir 44838
+  376  ls -ltr
+  377  cd -
+  378  pwd
+  379  cd -
+  380  ls -al
+  381  man cd -
+  382  ls -d
+  383  pwd
+  384  cd 44838
+  385  ls -ltr
+  386  cd ..
+  387  ls -ltr
+  388  cd 51508
+  389  cd ..
+  390  cd 44838
+  391  pwd
+  392  echo hello linux > hello_file.txt
+  393  cat hello_file.txt
+  394  echo hi linux >> hello_file.txt
+  395  cat hello_file.txt
+  396  > hello_file.txt
+  397  cat hello_file.txt
+  398  cat /etc/passwd
+  399  cat /etc/grop
+  400  cat /etc/gruop
+  401  cat /etc/gruop | grep *ensar*
+  402  cat /etc/group | grep *ensar*
+  403  cat /etc/group | grep *Zensar*
+  404  cat /etc/group | grep Zensar
+  405  cat /etc/hosts
+  406  cd .
+  407  cd.
+  408  ls
+  409  cat .hello_file.txt
+  410  cat ./hello_file.txt
+  411  vi hello_file.txt
+  412  cat ./hello_file.txt
+  413  cat .hello_file.txt
+  414  cat . hello_file.txt
+  415  cat .
+  416  ll
+  417  vi hello_file.txt
+  418  exit
+  419  su - root
+  420  history
+  421  echo $ shell
+  422  echo $ SHELL
+  423  echo $SHELL
+  424  echo "MY FIRST COMMAND"
+  425  echo {{MY FIRST COMMAND}}
+  426  date
+  427  hostname
+  428  uname -a
+  429  uptime
+  430  who am I
+  431  who
+  432  id
+  433  last
+  434  W
+  435  echo $SHELL
+  436  last
+  437  W
+  438  w
+  439  ksh
+  440  KSH
+  441  -ksh
+  442  -KSH
+  443  echo $ksh
+  444  echo $SHELL
+  445  man ls
+  446  man who
+  447  clear
+  448  cal 2010
+  449  cal 9 1752
+  450  time sleep 5
+  451  history 10
+  452  clear
+  453  history
+  454  clear
+  455  yes please
+  456  bc -l
+  457  echo 5
+  458  echo 5+4|bc -l
+  459  top
+  460  cd
+  461  pwd
+  462  mkdir 51507
+  463  cd 51507
+  464  pwd
+  465  cd..
+  466  ls
+  467  cd..
+  468  cd 51507
+  469  mkdir as51507
+  470  cd as51507
+  471  pwd
+  472  cd -
+  473  pwd
+  474  cd -
+  475  pwd
+  476  cd -
+  477  pwd
+  478  cd -
+  479  pwd
+  480  cd -
+  481  ls -al
+  482  cd..
+  483  cd ..
+  484  pwd
+  485  ls -d
+  486  cd $HOME
+  487  mkdir 51507 51508 51510
+  488  mkdir 51508 51509 51511
+  489  mkdir 51518 51519 51513
+  490  ls -d
+  491  ls
+  492  clear
+  493  pwd
+  494  echo hello linux > hello_file.txt
+  495  cat hello_file.txt
+  496  echo hello again >> hello_file.txt
+  497  cat hello_file.txt
+  498  echo hello linux > hello_file.txt
+  499  cat hello_file.txt
+  500  > hello_file.txt
+  501  cat hello_file.txt
+  502  cat etc/passwd
+  503  cat/etc/passwd
+  504  cat /etc/passwd
+  505  clear
+  506  cat /etc/group
+  507  cat /etc/group| grep Zensar
+  508  cat hello_file
+  509  cat hello_file.txt
+  510  cat .hello_file.txt
+  511  cd -
+  512  mkdir sr07
+  513  mkdir 1
+  514  mkdir 2
+  515  mkdir 123
+  516  cd 123
+  517  mkdir 1234
+  518  cd 1234
+  519  mkdir 12345
+  520  cd 12345
+  521  cd ..
+  522  cd ../..
+  523  cd 1234
+  524  cd ..
+  525  cd $HOME
+  526  cd 123
+  527  cd 12345
+  528  cd 1234
+  529  cd 12345
+  530  cd ..
+  531  cd 12345
+  532  cd../..
+  533  cd ../..
+  534  cd 1234
+  535  cd..
+  536  cd ..
+  537  exit
+  538  clear
+  539  mkdir 50077
+  540  ls -ltr
+  541  rm 50077
+  542  chmod -777 50077
+  543  chmod 777 50077
+  544  rm 50077
+  545  clear
+  546  cd -
+  547  pwd
+  548  clear
+  549  ls -al
+  550  clear
+  551  cd -
+  552  clear
+  553  cd ..
+  554  pwd
+  555  cd home
+  556  clear
+  557  ls -ltr
+  558  cd zensar
+  559  cd ..
+  560  clear
+  561  pwd
+  562  whoami
+  563  cd /home/Zensar
+  564  clear
+  565  pwd
+  566  ls -ltr
+  567  cd 50077
+  568  clear
+  569  cd $HOME
+  570  pwd
+  571  echo $HOME
+  572  clear
+  573  ls -lrt
+  574  cd 50077
+  575  clear
+  576  echo hello linum > hello_file.txt
+  577  ls -lrt
+  578  cat hello_file.txt
+  579  echo hello linux >> hello_file.txt
+  580  cat hello_file.txt
+  581  > hello_file.txt
+  582  cat hello_file.txt
+  583  cat etc/passwd
+  584  cat /etc/passwd
+  585  clear
+  586  cat /etc/group
+  587  clear
+  588  cat /etc/group|grep *ensar
+  589  cat /etc/group|grep *Zensar
+  590  cat /etc/group | grep *Zensar
+  591  cat /etc/group | grep Zensar
+  592  ls -lrt
+  593  mkdir my_file
+  594  cd my_file
+  595  cat .my_file
+  596  echo
+  597  echo 'file_naresh'
+  598  cat ./file_naresh
+  599  ls -lrt
+  600  echo 'file_naresh' > file_50077.txt
+  601  cat ./file_50077
+  602  cat ./file_50077.txt
+  603  ll
+  604  clear
+  605  touch sample_file.txt
+  606  echo "writing sample_file" > sample_file.txt
+  607  vi sample_file.txt
+  608  touch sample_file.txt
+  609  vi sample_file.txt
+  610  clear
+  611  ls
+  612  touch sample_file.txt
+  613  ls
+  614  ls -lrt
+  615  clear
+  616  ls -lrt
+  617  vi sampl_file.txt
+  618  echo 'write some thing' > sample_file.txt
+  619  vi sample_file.txt
+  620  wc -l sample_file.txt
+  621  exit
+  622  ifconfig
+  623  su -root
+  624  su-root
+  625  su- root
+  626  su - root
+  627  exit
+  628  df-h
+  629  df -h
+  630  show version
+  631  cat /etc/proc
+  632  uname -a
+  633  ifconfig
+  634  su -
+  635  clear
+  636  ksh
+  637  echo #SHELL
+  638  bash
+  639  echo $SHELL
+  640  su -
+  641  mkdir 51522
+  642  pwd
+  643  cd 51522
+  644  pwd
+  645  mkdir mp51522
+  646  cd mp51522
+  647  pwd
+  648  cd -
+  649  pwd
+  650  ls -al
+  651  pwd
+  652  cd mp51522
+  653  pwd
+  654  cd -
+  655  pwd
+  656  cd -
+  657  pwd
+  658  clear
+  659  ls -d
+  660  ls -l
+  661  ls -r
+  662  ls -R
+  663  cd $home
+  664  mkdir mp51522 mp51523 mp51524
+  665  pwd
+  666  ls -d
+  667  ls -l
+  668  echo $home
+  669  ls -d
+  670  ls
+  671  who am i
+  672  who
+  673  ls
+  674  ls -d
+  675  ls -l
+  676  ls -al
+  677  clear
+  678  cd mp51522
+  679  pwd
+  680  echo hello linux > hello.txt
+  681  cat hello.txt
+  682  echo hello linux >> hello.txt
+  683  cat hello.txt
+  684  hello linux > hello.txt
+  685  > hello.txt
+  686  cat hello.txt
+  687  cat etc/passwd
+  688  cat /etcpasswd
+  689  cat /etc/passwd
+  690  cleart
+  691  clear
+  692  cat /etc/group
+  693  cat /etc/group| grep Zensar
+  694  mkdir 1
+  695  cd 1
+  696  mkdir 12
+  697  cd 12
+  698  mkdir 123
+  699  cd 123
+  700  cd.
+  701  cd .
+  702  cd ..
+  703  cd ../..
+  704  cd ../../..
+  705  mkdir testy
+  706  cd mp51522
+  707  mkdir mp51522
+  708  cd mp51522
+  709  mkdir mp51522
+  710  logout
+  711  ifconfig
+  712  su
+  713  su -root
+  714  su - root
+  715  ls -
+  716  ls -l
+  717  cd Downloads
+  718  ls -l
+  719  cd ..
+  720  cd drwxr-xr-x. 2 Zensar Zensar 4096 Oct  4 06:42 Documents
+  721  cd Documents
+  722  lsd
+  723  l
+  724  ls
+  725  cd ..
+  726  cd Templates
+  727  ls
+  728  cd ..
+  729  clear
+  730  pwd
+  731  whoami
+  732  clear
+  733  ifconfig
+  734  whoami
+  735  clear
+  736  su - root
+  737  su -
+  738  su - Zensar
+  739  exit
+  740  pwd
+  741  mkdir 51578
+  742  cd 51578
+  743  pwd
+  744  cd -
+  745  cd -pwd
+  746  cd -
+  747  ls al
+  748  ls la
+  749  pwd
+  750  cd..
+  751  su - Zensarsu
+  752  cd..
+  753  cd Zensar
+  754  cd -
+  755  ls d
+  756  pwd
+  757  ld -d
+  758  ls
+  759  cd $HOME
+  760  pwd
+  761  mkdir 51578 51579 51581
+  762  cd $HOME
+  763  ls -d
+  764  pwd
+  765  cd 51578
+  766  pwd
+  767  echo hello linux>hello_file.txt
+  768  cat hello_file.txt
+  769  echo hello again >>hello_file.txt
+  770  cat hello_file.txt
+  771  echo hi>hello_file.txt
+  772  cat hello_file.txt
+  773  echo training<xyz.txt
+  774  echo train>xyz.txt
+  775  cat xyz.txt
+  776  echo bus>>xyz.txt
+  777  cat xyz.txt
+  778  echo esr>>>xyz.cat
+  779  echo ett>>xyz.txt
+  780  cat xyz.cat
+  781  cat xyz.txt
+  782  cat etc\pwd
+  783  cat etc/pwd
+  784  cat etc/passwd
+  785  cat /etc/passwd
+  786  cat /etc/group
+  787  cat /etc/passwd | grep Zensar
+  788  cat /etc/group | grep Zensar
+  789  pwd
+  790  cd /
+  791  pwd
+  792  cd $home
+  793  pwd
+  794  cd /home/Zensar/51578
+  795  pwd
+  796  cat myfile.txt
+  797  echo myfile>file.txt
+  798  cat file.txt
+  799   pwd
+  800  ccat./myfile
+  801  cat ./myfile
+  802  cat ./myfile.txt
+  803  cat ./file.txt
+  804  pwd
+  805  ls
+  806  ll
+  807  ifconfig
+  808  su
+  809  su - root
+  810  ifconfig
+  811  pwd
+  812  clear
+  813  su
+  814  su -root
+  815  su- root
+  816  clear
+  817  su - root
+  818  clear
+  819  pwd
+  820  history
+  821  echo $shell
+  822  echo $ shell
+  823  echo $SHELL
+  824  clear
+  825  echo "My First Command"
+  826  date
+  827  hostname
+  828  uname -a
+  829  uptime
+  830  who am i
+  831  who
+  832  id
+  833  last
+  834  W
+  835  w
+  836  ksh
+  837  KSH
+  838  /bin/ksh
+  839  echo $SHELL
+  840  /bin/bash
+  841  pwd
+  842  ksh
+  843  echo $SHELL
+  844  KSH
+  845  echo $SHELL
+  846  ksh
+  847  echo $SHELL
+  848  man ls
+  849  clear
+  850  cal 2010
+  851  cal 9 1752
+  852  time sleep 5
+  853  history
+  854  history +10
+  855  history 5
+  856  clear
+  857  yes please
+  858  clear
+  859  bc -l
+  860  echo 5+4|bc -l
+  861  top
+  862  clear
+  863  pwd
+  864  cd
+  865  pwd
+  866  mkdir sd51612
+  867  cd sd51612/
+  868  pwd
+  869  cd ..
+  870  pwd
+  871  cd sd51612/
+  872  cd -
+  873  pwd
+  874  cd sd51612/
+  875  pwd
+  876  cd -
+  877  pwd
+  878  ls -al
+  879  cd sd51612/
+  880  ls -al
+  881  pwd
+  882  clear
+  883  ls -al
+  884  ls
+  885  cd -
+  886  ls -al
+  887  ls -d
+  888  pwd
+  889  ls -d
+  890  ls -l
+  891  cd $HOME
+  892  pwd
+  893  cd sd51612/
+  894  pwd
+  895  cd $HOME
+  896  pwd
+  897  clear
+  898  mkdir sd51612/sd51613/sd51614
+  899  mkdir sd51615/sd51613/sd51614
+  900  mkdir sd51615 sd51613 sd51614
+  901  pwd
+  902  cd sd51615/sd51613/sd51614
+  903  ls
+  904  clear
+  905  cd sd51613
+  906  pwd
+  907  cd ..
+  908  pwd
+  909  cd sd51614
+  910  cd ..
+  911  pwd
+  912  ls -R
+  913  clear
+  914  ls -F
+  915  ls -lc
+  916  cd sd51612
+  917  pwd
+  918  clear
+  919  pwd
+  920  echo hello linux > hello_file.txt
+  921  ls
+  922  cat hello_file.txt
+  923  echo hello again >> hello_file.txt
+  924  cat hello_file.txt
+  925  > hello_file.txt
+  926  cat hello_file.txt
+  927  clear
+  928  cat /etc/passwd
+  929  cat /etc/group
+  930  clear
+  931  cat /etc/group | grep *ensar
+  932  cat /etc/group | grep *Zensar
+  933  cd ..
+  934  cat /etc/group | grep *Zensar
+  935  pwd
+  936  cat /etc/group | grep Zensar
+  937  cat /etc/group | grep *ensar
+  938  cat /etc/group | grep -i *ensar
+  939  cat /etc/group | grep -i "*ensar"
+  940  cat /etc/group | grep -i "Zensar"
+  941  pwd
+  942  cd sd51612
+  943  mkdir my-data
+  944  cd my-data/
+  945  mkdir accounts
+  946  cd accounts/
+  947  pwd
+  948  cd /home/sd51612
+  949  pwd
+  950  cd $/home/sd51612
+  951  cd.. /home/sd51612
+  952  pwd
+  953  cd ../..
+  954  pwd
+  955  cd my-data/accounts/
+  956  pwd
+  957  cd  /home/Zensar/sd51612
+  958  pwd
+  959  echo "my file">my_file1
+  960  ls
+  961  cat ./my_file1
+  962  cat my_file1
+  963  cat .my_file1
+  964  ./my_file1
+  965  clear
+  966  ls -l
+  967  chmod 777 my_file1
+  968  ls
+  969  ls -l
+  970  ./my_file1
+  971  cat my_file1
+  972  cat . my_file1
+  973  cat ./my_file1
+  974  chmod 664 my_file1
+  975  ls -l
+  976  cat ./my_file1
+  977  cat . my_file1
+  978  clear
+  979  ll
+  980  vi hello_file.txt
+  981  cat hello_file.txt
+  982  vi hello_file.txt
+  983  cat hello_file.txt
+  984  cat hello_file.txt | grep hk
+  985  wc -l hello_file.txt
+  986  clear
+  987  vi hello_file.txt
+  988  cat hello_file.txt
+  989  vi hello_file.txt
+  990  cat hello_file.txt
+  991  vi hello_file.txt
+  992  cat hello_file.txt
+  993  cat -n hello_file.txt
+  994  vi hello_file.txt
+  995  clear
+  996  pwd
+  997  whoami
+  998  cd sd51612
+  999  pwd
+ 1000  vi testfile
+ 1001  ls
+ 1002  cp testfile /my-data
+ 1003  ls -l
+ 1004  chmod 777 my-data
+ 1005  cp testfile /my-data
+ 1006  cd testfile /tmp
+ 1007  cd ..
+ 1008  ls -lrt
+ 1009  cd sd51612
+ 1010  clear
+ 1011  cd ..
+ 1012  touch testfile11
+ 1013  cp testfile11 /tmp
+ 1014  ls /tmp/testfile11
+ 1015  ls -lrt /tmp/testfile11
+ 1016  mv testfile11 mv_test
+ 1017  ls testfile11
+ 1018  ls mv_test
+ 1019  clear
+ 1020  history
+[Zensar@TRNGW46L0135 ~]$

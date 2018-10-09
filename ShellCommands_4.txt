@@ -1,0 +1,18 @@
+[Zensar@TRNGW46L0135 shellprograms]$ su - root
+Password:
+[root@TRNGW46L0135 ~]# pwd
+/root
+[root@TRNGW46L0135 ~]# cd ..
+[root@TRNGW46L0135 /]# pwd
+/
+[root@TRNGW46L0135 /]# cp /home/Zensar/sd51612/shellprograms/first.sh .
+[root@TRNGW46L0135 /]# ls first
+ls: cannot access first: No such file or directory
+[root@TRNGW46L0135 /]# ls -lrt first.sh
+-rw-r--r--. 1 root root 135 Oct 10 02:52 first.sh
+[root@TRNGW46L0135 /]# chmod 777 first.sh
+[root@TRNGW46L0135 /]# ls -lrt first.sh
+-rwxrwxrwx. 1 root root 135 Oct 10 02:52 first.sh
+[root@TRNGW46L0135 /]# su - Zensar
+[Zensar@TRNGW46L0135 ~]$ pwd
+/home/Zensar

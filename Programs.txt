@@ -1,0 +1,129 @@
+============================================
+Program1
+============================================
+First.sh
+============================================
+#!/bin/ksh
+#This is the first shell program
+echo "My first program"
+myvar=100
+echo $myvar
+echo "value of var" ${myvar} #display value
+============================================
+============================================
+/home/Zensar/sd51612/shellprograms
+three ways to run program
+1) sh first.sh
+2) . ./first.sh
+3) . first.sh
+============================================
+copy files with diff extensions
+============================================
+cp first.sh myfirst
+cp first.sh myfirst1.txt
+cp first.sh myfirst2.exe
+cp first.sh myfirst3.doc
+============================================
+Program 2
+============================================
+First.sh
+============================================
+#!/bin/ksh
+#This is the first shell program
+echo "My first program"
+myvar=100
+echo $myvar
+result=$?
+echo "first result "$result
+echo "value of var" ${myvar} #display value
+myvar2="SomeStrings"
+echo myvar2
+echo ${myvar2}
+echo "second result "$result
+if [ -e myfirst1.txt ]
+then
+echo $?
+echo "File Present"
+else
+echo "Nope.File is not Present"
+echo $?
+fi
+============================================================================
+echo $? returns 0 if result is success
+else will get some other return code like 127
+============================================================================
+Program 3
+============================================
+#!/bin/ksh
+#This is the first shell program
+echo "My first program"
+myvar=100
+echo $myvar
+result=$?
+echo "first result "$result
+echo "value of var" ${myvar} #display value
+myvar2="SomeStrings"
+echo myvar2
+echo ${myvar2}
+echo "second result "$result
+if [ -e myfirst1.txt ]
+then
+ech "File Present"
+echo $?
+else
+echo "Nope.File is not Present"
+echo $?
+fi
+============================================================================
+Program 4
+============================================
+Second.sh
+============================================================================
+echo "****************STARS******************************"
+printf "*******************STARS************************"
+echo "****************STARS******************************"
+
+echo "My First Argument is" $1
+echo "My Second Argument is" $2
+echo "My Third Argument is" $3
+echo "total arguments are" $#
+if [ $# -lt 3 ]
+then
+echo "Hey you are not passing arguments"
+fi
+============================================================================
+sh Second.sh one two three
+============================================================================
+Program 5
+============================================
+common.sh
+============================================================================
+my_var=1000
+my_date='date'
+my_name=$USER
+my_shell='pwd'
+my_parameters=$#
+============================================================================
+
+#!/bin/ksh
+. /home/Zensar/sd51612/shellprograms/common.sh
+#
+echo $my_var
+echo $my_date
+echo $my_name
+echo $my_shell
+echo $my_parameters
+
+echo "****************STARS******************************"
+printf "*******************STARS************************"
+echo "****************STARS******************************"
+
+echo "My First Argument is" $1
+echo "My Second Argument is" $2
+echo "My Third Argument is" $3
+echo "total arguments are" $#
+if [ $# -lt 3 ]
+then
+echo "Hey you are not passing arguments"
+fi
+
