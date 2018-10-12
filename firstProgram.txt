@@ -1,0 +1,230 @@
+==================================================
+11 Oct Shell Scripts
+==================================================
+1st Program = myfirst
+==================================================
+#!/bin/ksh
+#This is the first shell program
+echo "My first program"
+myvar=100
+echo $myvar
+echo "value of var" ${myvar} #display value
+==================================================
+2nd Program = first.sh
+==================================================
+#!/bin/ksh
+#This is the first shell program
+echo "My first program"
+myvar=100
+echo $myvar
+result=$?
+echo "first result "$result
+echo "value of var" ${myvar} #display value
+myvar2="SomeStrings"
+echo myvar2
+echo ${myvar2}
+echo "second result "$result
+if [ -e myfirst1.txt ]
+then
+echo "File Present"
+echo $?
+else
+echo "Nope.File is not Present"
+echo $?
+fi
+==================================================
+==================================================
+3rd Program = second.sh
+==================================================
+common.sh
+===============================
+my_var=1000
+my_date=`date`
+my_name=$USER
+my_shell=`pwd`
+my_parameters=$#
+===============================
+#!/bin/ksh
+. /home/Zensar/sd51612/shellprograms/common.sh
+#
+echo $my_var
+echo $my_date
+echo $my_name
+echo $my_shell
+echo $my_parameters
+
+echo "****************STARS******************************"
+printf "*******************STARS************************"
+echo "****************STARS******************************"
+
+echo "My First Argument is" $1
+echo "My Second Argument is" $2
+echo "My Third Argument is" $3
+echo "total arguments are" $#
+if [ $# -lt 3 ]
+then
+echo "Hey you are not passing arguments"
+fi
+==================================================
+4th Program = test.sh
+==================================================
+logmessage()
+{
+echo $1
+}
+logmessage "OK"
+==================================================
+==================================================
+5th Program = mypro.sh
+==================================================
+compro
+=========
+logmessage()
+{
+echo $1
+}
+prouser=$USER
+prodate='date'
+proshell=$SHELL
+proid=$$
+=========
+. ./compro
+LOGFILE=logs/mypro.sh.log
+logmessage "1 ${prouser}">>$LOGFILE
+logmessage "2 ${proshell}">>$LOGFILE
+logmessage "3 ${proid}">>$LOGFILE
+logmessage "4 ${prodate}">>$LOGFILE
+for file in 'ls $HOME'
+do
+logmessage $file >> $LOGFILE
+done
+
+12 Oct Shell Scripts
+==================================================
+1st Program = welcome.sh
+==================================================
+echo "welcome!"
+echo "Please enter name"
+read name
+echo "Please enter Script Name"
+read sname
+echo "Output is"
+echo "Name is :"$name
+echo "Script name is :" $sname
+echo "Program Ends Here"
+==================================================
+2nd Program = book.sh
+==================================================
+echo "welcome!"
+echo "Please enter your name"
+read name
+echo "Please enter Book Name"
+read bname
+echo "Output is"
+echo "Name is :"$name
+echo "Book name is :" $bname
+        if [[ $bname = "wings of fire" ]]
+        then
+                echo "Author is APJ"
+        elif [[ $bname = "three idiots" ]]
+        then
+                echo ["Author is Chetan Bhagat"]
+        else
+                echo "Unknown Author"
+        fi
+echo "Program Ends Here"
+==================================================
+3rd Program = filescript.sh
+==================================================
+echo "welcome!"
+echo "Please enter file name"
+read fname
+echo "Please enter keyword"
+read keyword
+echo "Checking if the file exists here"
+RES=$?
+echo "fileName is :"$fname
+echo "Keyword is :" $keyword
+    if [ $RES = 0 ]
+    then
+        echo "yes file exists"
+        grep ${keyword} ${fname}
+        SRES=$?
+        if [ ${SRES} -eq 0 ]
+        then
+                echo "Yes found the keyword"
+        else
+                echo "keyword not found"
+        fi
+    else
+        echo "Sorry.your file does not exist"
+    fi
+echo "Program Ends Here"
+==================================================
+slight change = filescript2.sh
+==================================================
+echo "welcome!"
+echo "Please enter file name"
+read fname
+echo "Please enter keyword"
+read keyword
+echo "Checking if the file exists here"
+echo "fileName is :"$fname
+echo "Keyword is :" $keyword
+    if [ -e ${fname} ]
+    then
+        echo "yes file exists"
+        grep ${keyword} ${fname}
+        SRES=$?
+        if [ ${SRES} -eq 0 ]
+        then
+                echo "Yes found the keyword"
+        else
+                echo "keyword not found"
+        fi
+    else
+        echo "Sorry.your file does not exist"
+    fi
+echo "Program Ends Here"
+==================================================
+4th Program =datescript.sh
+==================================================
+echo `date`
+echo "Date of execution is " `date +%d-%m-%y`
+echo "Date of execution is " `date +%d/%m/%y`
+#while loop
+vvar=100
+while true
+do
+  echo "printing"
+  echo $vvar
+  vvar=`expr $vvar + 1`
+  if [ $vvar = 105 ]
+  then
+       echo "enough"
+       exit 0
+  fi
+done
+==================================================
+5th Program=consolidateFiles.sh
+==================================================
+touch conso_File
+for file in `ls`
+do
+cat $file>>conso_File
+done
+lines_in_file=`wc -l conso_File`
+echo "Lines in consolidated File" $lines_in_file
+==================================================
+6th Program=expressionsFiles.sh
+==================================================
+ echo `expr 10 / 2` 5
+ echo `expr 10 + 2` 12
+ echo `expr 10 - 2` 8
+ cat testtable| awk {'print $1'}
+ ls -lrt >> myoutputfile
+ cat myoutputfile| awk {'print $3      $9'}
+
+
+
+
