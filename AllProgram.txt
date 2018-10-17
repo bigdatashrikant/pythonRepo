@@ -1,0 +1,127 @@
+ cat colfile
+Name                    Subject         Priority
+E40922                  Data Structures 0
+E30922                  OOP Concepts    1
+E90222                  Analytics       2
+E53290                  Tableau         3
+E72392                  Tensorflow      0
+
+cat listfile
+total 28
+-rw-rw-r--. 1 Zensar Zensar 545 Oct 18 02:30 script2
+-rw-rw-r--. 1 Zensar Zensar 493 Oct 18 02:30 script1
+-rw-rw-r--. 1 Zensar Zensar 222 Oct 18 02:30 script0
+-rw-rw-r--. 1 Zensar Zensar 152 Oct 18 02:30 script5
+-rw-rw-r--. 1 Zensar Zensar 196 Oct 18 02:30 script4
+-rw-rw-r--. 1 Zensar Zensar 221 Oct 18 02:30 script3
+-rw-rw-r--. 1 Zensar Zensar 140 Oct 18 02:31 colfile
+-rw-rw-r--. 1 Zensar Zensar   0 Oct 18 02:33 listfile
+
+cat script0
+echo "Welcome!"
+echo "Please enter name"
+read name
+echo "Please enter script name"
+read sname
+echo "Please see output of the script below:"
+echo "Name is : " $name
+echo "Script name is : " $sname
+echo "Program complete"
+
+cat script1
+echo "Welcome!"
+echo "Please enter your name"
+read name
+echo "Please enter book name"
+read bname
+echo "Please see output of the script below:"
+echo "Name : " $name
+echo "Book : " $bname
+ if [[ $bname = "Wigs of Fire" ]]
+then
+        echo "Auther is APJ"
+elif [[ $bname = "Three Ediots" ]]
+then
+      echo "Author is Chetan Bhagat"
+elif [[ $bname = "Old man and the sea" ]]
+then
+        echo "Author is Hemingway"
+else
+        echo "Oh! I'm sorry I don't know name if the author   of your book " $bname
+fi
+
+echo "Welcome!"
+echo Date of execution is " `date +%d/%m/%y`
+echo "Please enter File Name"
+read fname
+echo "Please enter key word"
+read keyword
+echo "Checking if the file exists here "
+if [ -e ${fname} ]
+then
+        echo "Glad. I found the file you mentioned"
+        echo "Now searching the keyword you mentioned in the file"
+
+
+
+        grep ${keyword} ${fname}
+        SRES=$?
+        if [ ${SRES} -eq 0 ]
+        then
+                echo "Yeah! found the key word in your file"
+        else
+                echo "Oops! Key word not found"
+        fi
+else
+        echo "Sorry. Your file does not exist"
+fi
+echo "Program over"
+ 
+cat script3
+echo "Welcome!"
+echo "Date of execution is " `date +%d/%m/%y`
+vvar=100
+while true
+do
+        echo "printing........."
+        echo $vvar
+        vvar=`expr $vvar + 1`
+        if [ $vvar = 105 ]
+        then
+                echo "Ok. enough numbers"
+                exit 0
+        fi
+done
+
+cat script4
+echo "Welcome!"
+echo "Date of execution is " `date +%d/%m/%y`
+echo "Contents of your file. Please see below"
+cat colfile
+echo "The first column of your file is "
+cat colfile | awk '{print $1}'
+
+cat script5
+echo "Welcome!"
+echo "Date of execution is " `date +%d/%m/%y`
+ls -lrt > listfile
+cat listfile | awk '{print $1 "    OK     " $2  "    USER    "  $3  }'
+
+
+ cat testfile
+echo "Welcome!"
+echo "Please enter value for myvar variable"
+#myvar="I'm precious. I'm invaluable"
+read myvar
+echo $myvar
+echo "Value stored in myvar is : $myvar"
+if [[ -z $myvar ]]
+then
+echo "Oops no value assigned to variable myvar"
+else
+echo "Yes. myvar variable holds a value and values is:"
+echo $myvar
+fi
+
+
+

@@ -1,0 +1,90 @@
+login as: Zensar
+Zensar@10.80.12.40's password:
+Last login: Tue Oct 16 04:31:53 2018 from 10.80.12.3
+[Zensar@TRNGW46L0135 ~]$ pwd
+/home/Zensar
+[Zensar@TRNGW46L0135 ~]$ clear
+[Zensar@TRNGW46L0135 ~]$ cd sd51612
+[Zensar@TRNGW46L0135 sd51612]$ pwd
+/home/Zensar/sd51612
+[Zensar@TRNGW46L0135 sd51612]$ clear
+[Zensar@TRNGW46L0135 sd51612]$ ls
+hello_file.txt  my-data  my_file1  myfiles.sh  shellprograms  testfile
+[Zensar@TRNGW46L0135 sd51612]$ cd shellprograms/
+[Zensar@TRNGW46L0135 shellprograms]$ ls
+13Oct      compro      first.sh  myfirst       myfirst2.exe  mypro.sh       second.sh    sourceFolder  testprog.sh
+common.sh  destFolder  logs      myfirst1.txt  myfirst3.doc  mytestprog.sh  shrikant.sh  testfile      test.sh
+[Zensar@TRNGW46L0135 shellprograms]$ cat first.sh
+#!/bin/ksh
+#This is the first shell program
+echo "My first program"
+myvar=100
+echo $myvar
+result=$?
+echo "first result "$result
+echo "value of var" ${myvar} #display value
+myvar2="SomeStrings"
+echo myvar2
+echo ${myvar2}
+echo "second result "$result
+if [ -e myfirst1.txt ]
+then
+echo "File Present"
+echo $?
+else
+echo "Nope.File is not Present"
+echo $?
+fi
+
+[Zensar@TRNGW46L0135 shellprograms]$ ls
+13Oct      compro      first.sh  myfirst       myfirst2.exe  mypro.sh       second.sh    sourceFolder  testprog.sh
+common.sh  destFolder  logs      myfirst1.txt  myfirst3.doc  mytestprog.sh  shrikant.sh  testfile      test.sh
+[Zensar@TRNGW46L0135 shellprograms]$ cd ..
+[Zensar@TRNGW46L0135 sd51612]$ clear
+[Zensar@TRNGW46L0135 sd51612]$ pwd
+/home/Zensar/sd51612
+[Zensar@TRNGW46L0135 sd51612]$ ls
+hello_file.txt  my-data  my_file1  myfiles.sh  shellprograms  testfile
+[Zensar@TRNGW46L0135 sd51612]$ locate hello_file.txt
+/home/Zensar/hello_file.txt
+/home/Zensar/27197/hello_file.txt
+/home/Zensar/42162/hello_file.txt
+/home/Zensar/42249/hello_file.txt
+/home/Zensar/44838/hello_file.txt
+/home/Zensar/49296/hello_file.txt
+/home/Zensar/50077/hello_file.txt
+/home/Zensar/50077/programs/user_dirs/ns50077/hello_file.txt
+/home/Zensar/51076/hello_file.txt
+/home/Zensar/51507/hello_file.txt
+/home/Zensar/51578/hello_file.txt
+/home/Zensar/AS39192/hello_file.txt
+/home/Zensar/AS47608/hello_file.txt
+/home/Zensar/CK50968/hello_file.txt
+/home/Zensar/Gl42162/hello_file.txt
+/home/Zensar/RY39457/hello_file.txt
+/home/Zensar/programs/user_dirs/27197_files/hello_file.txt
+/home/Zensar/programs/user_dirs/51076/hello_file.txt
+/home/Zensar/programs/user_dirs/rk50667/hello_file.txt
+/home/Zensar/sd51612/hello_file.txt
+/home/Zensar/vm29932/hello_file.txt
+[Zensar@TRNGW46L0135 sd51612]$ uname
+Linux
+[Zensar@TRNGW46L0135 sd51612]$ uname -a
+Linux TRNGW46L0135 2.6.32-504.el6.x86_64 #1 SMP Tue Sep 16 01:56:35 EDT 2014 x86_64 x86_64 x86_64 GNU/Linux
+[Zensar@TRNGW46L0135 sd51612]$ uptime
+ 02:34:21 up 7 days, 23:54,  9 users,  load average: 0.01, 0.02, 0.00
+[Zensar@TRNGW46L0135 sd51612]$ python -version
+Unknown option: -e
+Unknown option: -r
+Unknown option: -o
+Unknown option: -n
+Unknown option: -e
+usage: python [option] ... [-c cmd | -m mod | file | -] [arg] ...
+Try `python -h' for more information.
+[Zensar@TRNGW46L0135 sd51612]$ python -V
+Python 2.6.6
+[Zensar@TRNGW46L0135 sd51612]$
+login as: Zensar
+Zensar@10.80.12.40's password:
+Last login: Thu Oct 18 02:53:13 2018 from 10.80.12.39
+[Zensar@TRNGW46L0135 ~]$
