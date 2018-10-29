@@ -1,0 +1,57 @@
+hive> CREATE DATABASE EMPdb; 
+hive> SHOW DATABASES;
+hive> USE EMPdb;
+hive> Create table emp(id int, name string, sal float)
+        > row format delimited
+        > fields terminated by ‘\t’ ;
+hive> show Tables;
+hive> DESCRIBE emp;
+#Load File From LFS 
+hive> load data local inpath '/home/olympicusecase/olympic_data.csv' into table olympic;
+#Load File From HDFS 
+hive> load data inpath 'hdfs://olympic_data.csv' into table olympic;
+hive> select * from olympic;
+#Renaming the Current Table:
+hive> ALTER TABLE EMP RENAME TO EMP_TABLE;
+#Adding New Columns to an Existing Table
+hive> ALTER TABLE EMP_TABLE ADD COLUMNS (YOJ DATE);
+hive> truncate table EMP_TABLE;
+hive> DROP DATABASE EMPdb;
+
+==================================================
+Establishing Connection Between Hive and Spark SQL
+==================================================
+Step 1: Move hive-site.xml from $HIVE_HOME/conf/hive-site.xml to $SPARK_HOME/conf/hive-site.xml. 
+        Make an entry regarding hive metastore uris in this file.
+		<property>
+			<name>hive.metastore.uris</name>
+			<value>thrift://localhost:9083</value>
+			<description>URI for client to contact metastore server </description>
+		</property
+Step 2: Extract all the dependencies for required Spark components (in this case Spark SQL and Hive) in the build.sbt file.
+Step 3: Start all Hadoop processes in the cluster. Verify the following:RunJar
+Step 4: Start MySQL because Hive needs it to connect to the metastore and because Spark SQL will also need it when it connects to Hive.
+Step 5: Run the Hive metastore process so that when Spark SQL runs, it can connect to metastore uris and 
+		take from it the hive-site.xml file mentioned in the first step.
+		$hive --service metastore
+		
+==================================================
+Spark SQL Coding		
+==================================================
+
+To create a Hive table using Spark SQL, we can use the following code:
+
+==================================================
+Finally, to run the program, we need to follow these steps:
+==================================================
+Save the program as SparkPlusHive.scala after writing it.
+Go to the location of build.sbt file and execute the “sbt compile” and “sbt package” commands.
+The command will create a jar in /home/acadgild/IdeaProjects/SparkAndHive/project/target/scala-2.11:
+Execute spark-submit command to run the jar.
+
+Responsibilities:
+==================
+1) Performing collaborative operations on Hive tables and external DataFrames.
+2) Accessing Hive tables on Spark SQL and convert them into DataFrames.
+3) Loading Data from MySQL into Spark using JDBC.
+3) Loading Data from Spark into MySQL using JDBC.
